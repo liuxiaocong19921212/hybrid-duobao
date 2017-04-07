@@ -1,0 +1,212 @@
+/*opacity*/
+/*font size*/
+/*z*/
+/*font-icon*/
+/*
+* @Author: zhaoye-ds1
+* @Date:   2015-08-18 11:14:43
+* @Last Modified by:   zhaoye-ds1
+* @Last Modified time: 2015-11-06 17:25:06
+*/
+/* end*/
+.phone-info {
+  margin-bottom: 0.2rem;
+  padding: .3rem;
+  background-color: #fff;
+  font-size: 0.26rem;
+}
+.phone-info .phone-number {
+  display: -webkit-box;
+  display: box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: .2rem;
+}
+.phone-info .phone-number.h_center {
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  box-pack: center;
+  justify-content: center;
+  -webkit-justify-content: center;
+}
+.phone-info .phone-number.v_center:not(.vertical) {
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  box-align: center;
+  align-items: center;
+  -webkit-align-items: center;
+}
+.phone-info .phone-number.v_center.vertical {
+  -webkit-box-orient: vertical;
+  -moz-box-orient: vertical;
+  box-orient: vertical;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  box-pack: center;
+  justify-content: center;
+  -webkit-justify-content: center;
+  flex-direction: column;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+}
+.phone-info .phone-number.center {
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  box-align: center;
+  box-pack: center;
+  align-items: center;
+  -webkit-align-items: center;
+  justify-content: center;
+  -webkit-justify-content: center;
+}
+.phone-info .phone-number.vertical {
+  -webkit-box-orient: vertical;
+  -moz-box-orient: vertical;
+  box-orient: vertical;
+  flex-direction: column;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+}
+.phone-info .phone-number.reverse {
+  flex-direction: row-reverse;
+  -webkit-flex-direction: row-reverse;
+  -ms-direction: row-reverse;
+  -webkit-box-direction: reverse;
+  -moz-box-direction: reverse;
+  box-direction: reverse;
+}
+.phone-info .phone-number p {
+  line-height: 0.64rem;
+  height: 0.64rem;
+  margin-right: .2rem;
+}
+.phone-info .phone-number input {
+  display: block;
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1;
+  -webkit-flex: 1;
+  flex: 1;
+  box-sizing: border-box;
+  line-height: 0.64rem;
+  height: 0.64rem;
+  padding-left: 0.14rem;
+  border: 1px solid #d2d2d2;
+  width: 100%;
+}
+.phone-info .phone-info-tips {
+  font-size: 0.24rem;
+  color: #999;
+  line-height: 0.42rem;
+}
+.tips {
+  padding: .3rem;
+  font-size: 0.28rem;
+}
+.tips .tips-protocol {
+  display: -webkit-box;
+  display: box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: .28rem;
+  color: #666;
+  font-size: 0.26rem;
+  line-height: 0.34rem;
+  height: 0.34rem;
+}
+.tips .tips-protocol.h_center {
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  box-pack: center;
+  justify-content: center;
+  -webkit-justify-content: center;
+}
+.tips .tips-protocol.v_center:not(.vertical) {
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  box-align: center;
+  align-items: center;
+  -webkit-align-items: center;
+}
+.tips .tips-protocol.v_center.vertical {
+  -webkit-box-orient: vertical;
+  -moz-box-orient: vertical;
+  box-orient: vertical;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  box-pack: center;
+  justify-content: center;
+  -webkit-justify-content: center;
+  flex-direction: column;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+}
+.tips .tips-protocol.center {
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  box-align: center;
+  box-pack: center;
+  align-items: center;
+  -webkit-align-items: center;
+  justify-content: center;
+  -webkit-justify-content: center;
+}
+.tips .tips-protocol.vertical {
+  -webkit-box-orient: vertical;
+  -moz-box-orient: vertical;
+  box-orient: vertical;
+  flex-direction: column;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+}
+.tips .tips-protocol.reverse {
+  flex-direction: row-reverse;
+  -webkit-flex-direction: row-reverse;
+  -ms-direction: row-reverse;
+  -webkit-box-direction: reverse;
+  -moz-box-direction: reverse;
+  box-direction: reverse;
+}
+.tips .tips-protocol .checkbox {
+  display: block;
+  width: 0.34rem;
+  height: 0.34rem;
+  border: 1px solid #ff5c5c;
+  margin-right: 0.17rem;
+}
+.tips .tips-protocol .checkbox.active:before {
+  content: 'A';
+  display: block;
+  font-family: 'gome_icon';
+  padding-left: .02rem;
+  width: 0.34rem;
+  color: #ff5c5c;
+}
+.tips .tips-protocol .protocol {
+  display: block;
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1;
+  -webkit-flex: 1;
+  flex: 1;
+  box-sizing: border-box;
+  line-height: 0.34rem;
+  height: 0.34rem;
+}
+.tips .tips-protocol a {
+  color: #197fe7;
+}
+.tips .tips-detail {
+  color: #ff8800;
+  font-size: 0.24rem;
+}
+.tips .tips-detail p {
+  line-height: 0.4rem;
+}
+.product-info {
+  min-height: 1.6rem;
+}

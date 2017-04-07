@@ -1,0 +1,53 @@
+<script>
+if(!window.location.protocol.match(/http/i)){
+    reqRes(['b/plugin_core/src/cordova.js'])
+}
+//请求js            
+reqRes([
+        //'b/plugin_core/src/cordova.js',
+        //<% if(PackConfig.NODE_ENV == 'production') { %>
+            'b/components/src/vendor/vue.rls.js',
+        //<% } else { %>
+            // 'b/components/src/vendor/vue.js',
+            'b/components/src/vendor/vue.js',
+        //<% } %>
+        "b/components/src/vendor/require.min.js",
+        // "b/components/src/utils/gomeBridge.js",
+        'p/duobao/src/utils/gomeBridge.js',
+    ])
+</script>
+<script>
+    //定义配置文件
+    require.config({
+        baseUrl: window.RESOURCE,
+        paths: {
+            'components'           : 'p/duobao/src/components',
+            'fastclick'            : 'b/components/src/vendor/fastclick.min',
+            'base64'               : 'b/components/src/vendor/base64.min',
+            'queryparser'          : 'b/components/src/vendor/queryparser',
+            'docode'               : 'p/duobao/src/js/utils/docode',
+            'config'               : 'p/duobao/src/js/utils/config',
+            //widgets
+            'widgets.pdlist.double'      : 'p/duobao/src/widgets/widgets.pdlist.double',
+            'widgets.btmNav.btn.default' : 'p/duobao/src/widgets/widgets.btmNav.btn.default',
+            'widgets.carousel'           : 'p/duobao/src/widgets/widgets.carousel',
+            'widgets.compute.rule'       : 'p/duobao/src/widgets/widgets.compute.rule',
+            'widgets.detail.btmNav'      : 'p/duobao/src/widgets/widgets.detail.btmNav',
+            'widgets.detail.img'         : 'p/duobao/src/widgets/widgets.detail.img',
+            'widgets.detail.info'        : 'p/duobao/src/widgets/widgets.detail.info',
+            'widgets.detail.joinList'    : 'p/duobao/src/widgets/widgets.detail.joinList',
+            'widgets.detail.list'        : 'p/duobao/src/widgets/widgets.detail.list',
+            'widgets.detail.nav'         : 'p/duobao/src/widgets/widgets.detail.nav',
+            'widgets.detail.number'      : 'p/duobao/src/widgets/widgets.detail.number',
+            'widgets.number.rule'        : 'p/duobao/src/widgets/widgets.number.rule',
+            'widgets.order.address'      : 'p/duobao/src/widgets/widgets.order.address',
+            'widgets.order.dialog'       : 'p/duobao/src/widgets/widgets.order.dialog',
+            'widgets.pdlist.double'      : 'p/duobao/src/widgets/widgets.pdlist.double',
+            'widgets.pdlist.luck'        : 'p/duobao/src/widgets/widgets.pdlist.luck',
+            'widgets.pdlist.my'          : 'p/duobao/src/widgets/widgets.pdlist.my',
+            'widgets.pdlist.result'      : 'p/duobao/src/widgets/widgets.pdlist.result',
+            'widgets.pd.order'           : 'p/duobao/src/widgets/widgets.pd.order',
+            'widgets.shortcut'           : 'p/duobao/src/widgets/widgets.shortcut',
+        }
+    })
+</script>

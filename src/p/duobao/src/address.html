@@ -1,0 +1,55 @@
+
+    <% if(PackConfig.NODE_ENV == 'product' && PackConfig.PLATFORM != 'WAP')%>
+        <!DOCTYPE html>
+        <html lang="en">
+        <head>
+            <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+            <title></title>
+            <meta name="author" content="m.gome.com.cn">
+            <meta http-equiv="Expires" content="0">
+            <meta http-equiv="Cache-Control" content="no-cache">
+            <meta http-equiv="Pragma" content="no-cache">
+            <meta name="wap-font-scale" content="no">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    else{
+        <!-- template public/header -->
+    }
+    <% include tmpl/header_res.html %>
+    <style>
+		.sh-address{
+			background: #fff url(images/borderbg.jpg) repeat-x bottom;
+            background-size: 0.98rem auto;
+            box-sizing: border-box;
+            padding: .28rem 0.46rem .2rem;
+            min-height: 1rem;
+            height: auto;
+            margin-bottom: .2rem;
+		}
+        .product{
+            min-height: 1.6rem;
+        }
+        .btm_nav{
+            height: .96rem;
+            background: #f9f9f9;
+        }
+    </style>
+</head>
+<body>
+    <div id="shaddress">
+        <div class="sh-address"></div>
+        <div class="product"></div>
+        <div class="btm_nav"></div>
+    </div>	
+	<div id="shaddress"></div>
+    <% include tmpl/footer_res.html %>
+    <script>
+        require.config({
+            paths:{
+                'entry': 'p/duobao/src/js/address'
+            }
+        })
+        require(['entry'])
+    </script>
+
+</body>
+</html>

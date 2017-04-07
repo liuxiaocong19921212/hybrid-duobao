@@ -1,0 +1,1 @@
+module.exports={"NODE_ENV":"dev","PLATFORM":"WAP","SDK":"ALL","UPDATE":"TRUE","UPGRADE":"FALSE","outputPath":"dev","ENV":"UAT","PROJECT":"DUOBAO"}

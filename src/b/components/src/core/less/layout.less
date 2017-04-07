@@ -1,0 +1,102 @@
+/*
+* @Author: zhaoye-ds1
+* @Date:   2015-08-18 11:14:43
+* @Last Modified by:   zhaoye-ds1
+* @Last Modified time: 2015-11-06 17:25:06
+*/
+
+.flexbox() {
+    display: -webkit-box;
+    display: box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    &.h_center {
+        -webkit-box-pack: center;
+        -moz-box-pack: center;
+        box-pack: center;
+        justify-content: center;
+        -webkit-justify-content: center;
+    }
+    &.v_center {
+        &:not(.vertical){
+            -webkit-box-align: center;
+            -moz-box-align: center;
+            box-align: center;
+            align-items: center;
+            -webkit-align-items: center;
+        }
+
+    }
+    &.v_center.vertical {
+        -webkit-box-orient: vertical;
+        -moz-box-orient: vertical;
+        box-orient: vertical;
+        -webkit-box-pack: center;
+        -moz-box-pack: center;
+        box-pack: center;
+        justify-content: center;
+        -webkit-justify-content: center;
+        flex-direction: column;
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+    }
+    &.center {
+        -webkit-box-align: center;
+        -moz-box-align: center;
+        -webkit-box-pack: center;
+        -moz-box-pack: center;
+        box-align: center;
+        box-pack: center;
+        align-items: center;
+        -webkit-align-items: center;
+        justify-content: center;
+        -webkit-justify-content: center;
+    }
+    &.vertical {
+        -webkit-box-orient: vertical;
+        -moz-box-orient: vertical;
+        box-orient: vertical;
+        flex-direction: column;
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+    }
+    &.reverse{
+        flex-direction: row-reverse;
+        -webkit-flex-direction: row-reverse;
+        -ms-direction: row-reverse;
+        -webkit-box-direction: reverse;
+        -moz-box-direction: reverse;
+        box-direction: reverse;
+    }
+}
+.flexitem(@percent) {
+    display: block;
+    -webkit-box-flex: @percent;
+    -moz-box-flex: @percent;
+    -webkit-flex: @percent;
+    flex: @percent;
+    box-sizing: border-box;
+}
+/* end*/
+
+.ellipsis(){
+    overflow:hidden;
+    white-space:nowrap;
+    text-overflow:ellipsis;
+}
+.ellipsis-line(@number){
+    display:-webkit-box;
+    //-webkit-line-clamp:@number;
+    -webkit-box-orient:vertical;
+    text-overflow:ellipsis;
+    overflow:hidden;
+}
+.grid(@number) {
+    font-size: 0;
+    >* {
+        width: 100% / @number;
+        font-size: .32rem;
+        display: inline-block;
+    }
+}

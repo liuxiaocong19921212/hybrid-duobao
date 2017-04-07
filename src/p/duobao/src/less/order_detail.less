@@ -1,0 +1,80 @@
+@import '../../../../b/components/src/core/less/var.less';
+@import '../../../../b/components/src/core/less/utils.less';
+@import '../../../../b/components/src/core/less/layout.less';
+@import './var.less';
+@import './duobao.less';
+
+.phone-info {
+    .module();
+    padding: .3rem;
+    background-color: @white;
+    font-size: @font-nm - 0.02rem;
+    .phone-number {
+        .flexbox();
+        margin-bottom: .2rem;
+        p {
+            .set-line-height(1;.64rem);
+            margin-right: .2rem;
+        }
+        input {
+            .flexitem(1);
+            .set-line-height(1;.64rem);
+            padding-left: @font-nm * .5 ;
+            border: 1px solid #d2d2d2;
+            width: 100%;
+        }
+    }
+    .phone-info-tips {
+        font-size: @font-nm-sm;
+        color: @gray-light;
+        line-height: @font-nm * 1.5;
+    }
+}
+@font-tips: @font-nm;
+@tips-line-size: .34rem;
+@blue: #197fe7;
+@orange: #ff8800;
+.tips {
+    padding: .3rem;
+    font-size: @font-tips;
+    .tips-protocol {
+        .flexbox();
+        margin-bottom: .28rem;
+        color: @gray;
+        font-size: @font-nm - 0.02rem;
+        .set-line-height(1;@tips-line-size;);
+        .checkbox {
+            display: block;
+            width: @tips-line-size;
+            height: @tips-line-size;
+            border: 1px solid @red;
+            margin-right: @tips-line-size * .5;
+            &.active:before {
+                content: 'A';
+                display: block;
+                font-family: 'gome_icon';
+                padding-left: .02rem;
+                width: @tips-line-size;
+                color: @red;
+            }
+        }
+        .protocol {
+            .flexitem(1);
+            .set-line-height(1;@tips-line-size;);
+        }
+        a {
+            color: @blue;
+        }
+    }
+    .tips-detail {
+        color: @orange;
+        font-size: @font-nm-sm;
+        p {
+            line-height: 2 * @font-sm;
+        }
+    }
+}
+
+.product-info {
+    min-height: .3rem * 2 + 1rem;
+}

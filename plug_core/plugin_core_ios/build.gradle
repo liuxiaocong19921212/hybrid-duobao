@@ -1,0 +1,32 @@
+buildscript {
+    repositories {
+        maven{
+                url "http://10.126.53.27:8081/nexus/content/groups/public"
+        }
+    }
+    dependencies {
+        classpath group: 'com.gutils', name: 'apker', version: '2.15'
+        classpath group: 'com.gutils', name: 'version', version: '1.0'
+    }
+}
+apply plugin: 'com.gutils.apker'
+apply plugin: 'com.gutils.version'
+
+
+gversion {
+    codeOptions { 
+        versionCodeType com.gutils.version.opts.VersionCodeType.AUTO_INCREMENT_ONE_STEP
+        dependsOnTasks 'package' // defaultValue
+    }
+}
+
+ApkerConfig{
+    plugId          "plugin_core_ios"
+    name            "plugin_core_ios"
+    versionName     "v0.9"
+    describe        "plugin_core测试"
+    plugVersion     gversion.versionCodeFormate
+    supportSdk      "3"
+    platform        "iphone"
+    isComponent     true
+}

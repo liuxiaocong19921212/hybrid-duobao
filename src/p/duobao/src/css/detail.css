@@ -1,0 +1,34 @@
+/*
+* @Author: liuxiaocong
+* @Date:   2016-07-19  16:56
+* @Last Modified by: 
+* @Last modified time: 
+*/
+img{
+    width: 100%;
+    display: block;
+}
+#detailBox{
+    border-top: 1px solid #e6e6e6;
+    height:1.92rem;
+    background: #fff;
+    margin-bottom: .2rem;
+}
+#menuList{
+    height: 1.7rem;
+    background: #fff;
+    margin-bottom: .2rem;
+}
+#joinList{
+    background: #fff;
+}
+#joinList h3{
+    padding: 0.28rem 0.72rem 0.28rem 0;
+    color: #666;
+    font-size: 0.28rem;
+    margin-left: .3rem;
+    border-bottom: 1px solid #e6e6e6;
+}
+#joinList .list{
+    height: 1.65rem;
+}

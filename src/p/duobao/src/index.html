@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <title></title>
+        <meta name="author" content="m.gome.com.cn">
+        <meta http-equiv="Expires" content="0">
+        <meta http-equiv="Cache-Control" content="no-cache">
+        <meta http-equiv="Pragma" content="no-cache">
+        <meta name="wap-font-scale" content="no">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+        <% include tmpl/header_res.html %>
+        <script>
+            //请求css
+            reqRes(["p/duobao/src/css/index.css"],{cache:'<%=dateCatch%>'})
+        </script>
+    </head>
+    <body>
+        <div id="carousel"></div>
+        <!-- <div id="carousel2"></div> -->
+        <div id="shortcut"></div>
+        <div id="productDouble"></div>
+        <div id="gotop">
+            <gotop></gotop>
+        </div>
+        <!--占位元素 顶替footer 勿删-->
+        <div class="my_foot"></div>
+        <ul class="foot_nav">
+            <li><a href="javascript:;"><span class="icon selection"></span><span class="name">精选</span></a></li>
+            <li><a href="javascript:;"><span class="icon licai"></span><span class="name">理财</span></a></li>
+            <li><a href="javascript:;"><span class="icon baina"></span><span class="name">白拿</span></a></li>
+            <li class="active"><a href="javascript:;"><span class="icon crowdfund"></span><span class="name">夺宝</span></a></li>
+            <li><a href="javascript:;"><span class="icon mine"></span><span class="name">我的</span></a></li>
+        </ul>
+        <% include tmpl/footer_res.html %>
+        <script>
+            require.config({
+                paths:{
+                    'entry' : 'p/duobao/src/js/index',
+                }
+            })
+            //开始
+            require(['entry'])
+        </script>
+    </body>
+</html>

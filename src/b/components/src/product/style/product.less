@@ -1,0 +1,64 @@
+@import '../../core/less/var.less';
+@import '../../core/less/layout.less';
+
+.line-height-name(@fz){
+    line-height: @fz;
+    height: @fz * 2;
+}
+.product{
+    width: 100%;
+    overflow: hidden;
+    background-color: @white;
+    .container{
+        &.img {
+            position: relative;
+            //.flexitem(1);
+            box-sizing: border-box;
+        }
+    }
+    .container{
+        &.img {
+            background-color: @gray-bg-product;
+            background-image: url(../../core/images/default_bg_transparent.png);
+            background-repeat: no-repeat;
+            background-size: 100% auto;
+            background-position: center;
+        }
+        /*&.content {
+            .flexitem(2);
+            .flexbox();
+            .flexbox.v_center.vertical();
+            box-sizing: border-box;
+            .name {
+                .ellipsis-line(2);
+                .line-height-name(.3rem);
+                margin: .05rem 0 .16rem 0;
+                font-size: .24rem;
+                color: @gray;
+            }
+            .price {
+                display: inline-block;
+                font-size: .3rem;
+                color: @red;
+                font-family: arial;
+                small {
+                    font-size: .24rem;
+                }
+                margin-bottom: .12rem;
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+            .subinfo {
+                .price-origin {
+                    font-size: .22rem;
+                    color: @gray-lighter;
+                }
+                font-size: .22rem;
+                color: @gray-lighter;
+            }
+        }*/
+    }
+}
+
+

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <title></title>
+        <meta name="author" content="m.gome.com.cn">
+        <meta http-equiv="Expires" content="0">
+        <meta http-equiv="Cache-Control" content="no-cache">
+        <meta http-equiv="Pragma" content="no-cache">
+        <meta name="wap-font-scale" content="no">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+        <% include tmpl/header_res.html %>
+        <script>
+            reqRes(['p/duobao/src/css/order_detail.css'])
+        </script>
+    </head>
+    <body>
+        <div class="phone-info">
+            <div class="phone-number">
+                <p>手机号码</p> <input maxlength="11" type="text" @change="onInput" @input="onInput" @blur="onBlur" @click="onClick" v-model="number" :placeholder="placeholder">
+            </div>
+            <div class="phone-info-tips">
+                手机号码很重要，我们会通过它联系您邮寄奖品。
+            </div>
+        </div>
+        <div class="product-info">
+        <!--waiting to be rep by vue comp-->
+        </div>
+        <div class="tips">
+            <div class="tips-protocol">
+                <span class="checkbox active" :class="{active: isActive}" @click="onClick"></span>
+                <div class="protocol">
+                    我已阅读并同意<a :href="href">《夺宝相关协议》</a>
+                </div>
+            </div>
+            
+        </div>
+        <div class="bottom-nav">
+        <!--waiting to be rep by vue comp-->
+        </div>
+        <div id="gotop">
+            <gotop></gotop>
+        </div>
+        <% include tmpl/footer_res.html %>
+        <script>
+            require.config({
+                paths: {
+                    'entry': 'p/duobao/src/js/order_detail',
+                }
+            })
+            require(['entry'])
+        </script>
+    </body>
+</html>

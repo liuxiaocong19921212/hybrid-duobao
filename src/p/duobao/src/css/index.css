@@ -1,0 +1,86 @@
+ /**
+ * @Author: 刘晓丛
+ * @Date: 2016-07-15  11:50:00
+ * @Last Modified by: 
+ * @Last modified time: 2016-08-09  15:18:37
+ */
+#carousel{
+    min-height: 2.2rem;
+    background: #fff;
+}
+.swiper-container{
+    min-height: 2.2rem;
+}
+ /*底部导航*/
+.my_foot{
+    height: 1.1rem;
+}
+.foot_nav{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    max-width: 640px;
+    z-index: 1000;
+    border-top: 1px solid #d2d2d2;
+    background: #f4f4f4;
+}
+.foot_nav li{
+    width: 20%;
+    float: left;
+}
+.foot_nav li .name{
+    display: block;
+    color: #666;
+    text-align: center;
+    font-size: .2rem;
+    padding-bottom: .1rem;
+}
+.foot_nav li.active .name{
+    color: #ff5c5c;
+}
+.foot_nav li .icon{
+    display: block;
+    text-align: center;
+    height: 0.46rem;
+    width:  0.46rem;
+    margin: .1rem auto;
+    background-image: url(../images/nav_foot.png);
+    background-repeat: no-repeat;
+    background-size: auto 1.2rem;
+}
+/* 精选*/
+.foot_nav li .icon.selection{
+    background-position: 0 0;   
+}
+.foot_nav li.active .icon.selection{
+    background-position: 0 -0.55rem;    
+}
+/*理财*/
+.foot_nav li .icon.licai{
+    background-position: -0.49rem 0;    
+}
+.foot_nav li.active .icon.licai{
+    background-position: -0.49rem -0.55rem; 
+}
+/*白拿*/
+.foot_nav li .icon.baina{
+    background-position: -0.98rem 0; 
+}
+.foot_nav li.active .icon.baina{
+    background-position: -0.98rem -0.55rem;  
+}
+/*众筹*/
+.foot_nav li .icon.crowdfund{
+    background-position: -1.46rem 0; 
+    width: .46rem;
+}
+.foot_nav li.active .icon.crowdfund{
+    background-position: -1.46rem -0.55rem;  
+}
+/*我的*/
+.foot_nav li .icon.mine{
+    background-position: -1.94rem 0; 
+}
+.foot_nav li.active .icon.mine{
+background-position: -1.94rem -0.55rem;  
+}

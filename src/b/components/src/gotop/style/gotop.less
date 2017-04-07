@@ -1,0 +1,33 @@
+@gotop-width: 1rem;
+@gotop-height: 1rem;
+
+.gotop-postion() {
+    position: fixed;
+    bottom: .2rem;
+    right: .2rem;
+}
+.gotop-size(){
+    width: @gotop-width;
+    line-height: @gotop-height;
+}
+#gotop {
+    .flexbox();
+    .flexbox.center();
+    .gotop-postion();
+    color: @white;
+    z-index: @z-max;
+    -webkit-transform: translateZ(0);
+    -moz-transform: translateZ(0);
+    transform: translateZ(0);
+    
+}
+.gotop-transition {
+    transition: opacity .3s;
+    opacity: 1;
+}
+.gotop-enter {
+    opacity: 0;
+}
+.gotop-leave {
+    opacity: 0;
+}
